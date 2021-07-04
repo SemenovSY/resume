@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SemenovSYur</title>
+        <link rel="icon" href="./Style/Icons/favicon.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="./Style/page.css">
+        <link rel="stylesheet" href="./Style/mobStyle.css">
+        <link rel="stylesheet" href="./Style/buttons.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto" href="#" onclick="smoothScrolling('section1')">О себе</a></li>
+                    <li><a class="nav-link scrollto" href="#" onclick="smoothScrolling('section2')">Навыки</a></li>
+                    <li><a class="nav-link scrollto" href="#" onclick="smoothScrolling('section3')">Проекты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main" id="main">
+            <p class="h1tag" id="section1" style="margin: 0"></p>
+            <h1 style="margin: 0; font-size: 40px;">О СЕБЕ</h1>
+            <p class="h1closetag" style="margin: 0 0 0 0"></p>
+            <section id="aboutme" class="aboutme">
+                <div class="myname" id="myname">
+                    <div style="padding: 20px">
+                        <h1>&lt;СЕМЕНОВ СЕРГЕЙ&gt;</h1>
+                        <p class="h2tag" style="margin: 0"></p>
+                        <h2 id="developer" style="margin: 0">FRONTEND РАЗРАБОТЧИК</h2>
+                        <p class="h2closetag" style="margin: 0 0 6% 0"></p>
+                    </div>
+                </div>
+                <div class="aboutme-content" id="aboutme-content">
+                    <div class="aboutme-content-back" id="aboutme-content-back">
+                        <h1 class="aboutme-header" id="set-link" style="font-size: 20px;">&lt;link&gt;</h1>
+                        <div class="icons" id="icons" style="margin-top:40px">
+                            <a href="https://vk.com/s.semenovv" target="_blank"><img src="./Style/Icons/vk.png" height="93px" class="soc-icon" id="vk"></a>
+                            <a href="https://t.me/semenov921" target="_blank"><img src="./Style/Icons/telegram.png" height="93px" class="soc-icon" id="tg"></a>
+                            <a href="https://www.instagram.com/semenov.921/" target="_blank"><img src="./Style/Icons/instagram.png" height="93px" class="soc-icon" id="inst"></a>
+                            <a href="https://github.com/SemenovSY" target="_blank"><img src="./Style/Icons/github.png" height="93px" class="soc-icon" id="github"></a>
+                            <a href="mailto:serega.semenovv@gmial.com"><img src="./Style/Icons/gmail.png" height="93px" class="soc-icon" id="gmail"></a>
+                        </div>
+                        <button class="readmore-button" id="readmore-button" onclick="rotateAbout()">НАЗАД</button>
+                    </div>
+                    <div class="aboutme-content-front" id="aboutme-content-front">
+                        <h1 class="aboutme-header"></h1>
+                        <p class="summary" style="font-size: 15px;">
+                            Начинающий специалист в области FrontEnd разработки.
+                            На данный момент я открыт для новых предложений.
+                            Имею опыт одиночной и командной разработки проектов.
+                            В рамках собеседования буду рад ответить на интересующие Вас вопросы и рассказать несколько больше о своем опыте и навыках.
+                        </p>
+                        <button class="readmore-button" id="readmore-button" onclick="rotateAbout()">КОНТАКТЫ</button>
+                        <p class="summary" style="margin: 60px 0 -30px 0">
+                            Более детальную информацию Вы можете найти на данной странице или в моем <a href="./Docs/resume.pdf" target="_blank">резюме</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="aboutme-image" id="aboutme-image">
+                    <p class="summary">
+                        <h1>&lt;Место для фото&gt;</h1>
+                    </p>
+                </div>
+                <div class="redblock" id="redblock"></div>
+                <div class="dots-top" id="dots"></div>
+            </section>
+            <p class="h1tag" id="section2" style="margin: 10vh 0 0 0"></p>
+            <h1 style="margin: 0; font-size: 40px;">НАВЫКИ&ТЕХНОЛОГИИ</h1>
+            <p class="h1closetag" style="margin: 0 0 20vh 0"></p>
+            <section class="skills" id="skills">
+                <div class="skills-list" style="margin-left: 0;" id="known">
+                    <h2 style="font-size: 35px;">&lt;ОПЫТ ИСПОЛЬЗОВАНИЯ&gt;</h2>
+                    <ul class="tech">
+                        <li>Windows</li>
+                        <li>Linux</li>
+                        <li>Apache / Nginx / Lighttpd</li>
+                        <li>PostgreSQL / MySQL</li>
+                    </ul>
+                </div>
+                <div class="skills-list" id="operate">
+                    <h2 style="font-size: 35px;">&lt;ПОВСЕДНЕВНАЯ РАБОТА&gt;</h2>
+                    <ul class="tech">
+                        <li>HTML5 / CSS3</li>
+                        <li>Responsive Layout</li>
+                        <li>JavaScript</li>
+                        <li>React.js</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Version Control ( GIT )</li>
+                    </ul>
+                </div>
+                <div class="skills-list" id="learn">
+                    <h2 style="font-size: 35px;">&lt;ПОВЫШЕНИЕ НАВЫКОВ&gt;</h2>
+                    <ul class="tech">
+                        <li>TypeScript</li>
+                        <li>Redux</li>
+                        <li>React Native</li>
+                        <li>Node.js</li>
+                        <li>REST API</li>
+                        <li>Cross-Browser</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <p class="h1tag" id="section3" style="margin: 10vh 0 0 0"></p>
+            <h1 style="margin: 0; font-size: 40px;">ПРОЕКТЫ</h1>
+            <p class="h1closetag" style="margin: 0 0 5vh 0"></p>
+            <section id="projects" class="projects">
+                <div class="description" id="description" onclick="goToProj()">
+                    <p class="summary">
+                        &lt;div id="description"&gt;&lt;/div&gt;
+                    </p>
+                </div>
+                <div class="demo" id="demo"><img class="demo-img" id="demo-img" onclick="setSecondImg()"></div>
+                <div class="demo-top" id="demo-top">
+                    <p class="summary">
+                        &lt;img id="screenshot"&gt;&lt;/img&gt;
+                    </p>
+                </div>
+                <div class="select-buttons">
+                    <div class="multi-button" id="selectButtons">
+                        <button id="pOne">Один</button>
+                        <button id="pTwo">Два</button>
+                        <button id="pThree1">Три</button>
+                        <button id="pFour1">Четыре</button>
+                    </div>
+                </div>
+                <h2 id="hint">&lt;несколько скриншотов&gt;</h2>
+            </section>
+            <button id="backToTopButton" class="backToTopButton" onclick="smoothScrolling('section1')">&lt;вверх&gt;</button>
+        </main>
+    <script type="text/javascript" src="./Scripts/app.js"></script>
+    <script type="text/javascript" src="./Scripts/scroll.js"></script>
+    </body>
+</html>

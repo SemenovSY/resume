@@ -1,0 +1,132 @@
+@media (max-width: 756px) {
+  html, body {
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    background: linear-gradient(60deg, rgb(250, 250, 250), rgb(230, 230, 230));
+    font-family: monospace;
+  }
+  
+  ::-webkit-scrollbar {
+    overflow-x: auto;
+  }
+  
+    .aboutme {
+      height: 150vh;
+    }
+    
+    .myname {
+      position: absolute;
+      left: 50px;
+      top: 20px;
+      width: 250px;
+      height: 250px;
+      z-index: 3;
+    }
+  
+    .aboutme-content-front, .aboutme-content-back {
+      position: absolute;
+      left: -30px;
+      top: 480px;
+      width: 100%;
+      height: 450px;
+      transition: 1s;
+      z-index: 3;
+    }
+  
+    .summary {
+      width:auto;
+    }
+
+    .readmore-button {
+      margin-bottom: -30px;
+    }
+    
+    .soc-icon {
+      height: 60px;
+    }
+  
+    .aboutme-image {
+      position: absolute;
+      left: 10px;
+      top: 200px;
+      width: 300px;
+      height: 300px;
+      z-index: 2;
+    }
+    
+    .redblock {
+      position: absolute;
+      left: 5%;
+      top: 150px;
+    }
+
+    .skills {
+      position: relative;
+      margin: 0 auto 100px;
+      display: flex;
+      flex-direction: column;
+      max-width: 2000px;
+      height: 500px;
+      font-size: 15px;
+    }
+  
+    .skills-list {
+      width: 97%;
+      height: 500px;
+      font-size: 17px;
+      margin-left: 0;
+    }
+
+    .skills-list h2 {
+      margin-top: 10px;
+    }
+  
+    .tech {
+      margin-top: 25px;
+    }
+  
+    .description {
+      width: 97%;
+      height: 200px;
+      overflow: auto;
+      font-size: 7px;
+    }
+
+    .description .summary {
+      font-size: 15px;
+    }
+  
+    .demo {
+      position: absolute;
+      right: 0;
+      bottom: -10px;
+      margin-right: 10px;
+      width: 100%;
+      height: 300px;
+    }
+  
+    #hint {
+      position: absolute;
+      bottom: -10px;
+      right: 20px;
+      font-size: 15px;
+    }
+  
+    .demo-top {
+      position: absolute;
+      padding: 30px 40px;
+      right: 0;
+      bottom: -10px;
+      margin-right: 10px;
+      width: 100%;
+      height: 300px;
+      font-size: 15px;
+      z-index: 6;
+    }
+  
+    .backToTopButton {
+      display: none;
+    }
+}
